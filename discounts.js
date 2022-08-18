@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const coupons = [];
     coupons["batman"] = 25;
     coupons["captainamerica"] = 40;
@@ -5,6 +6,15 @@ const coupons = [];
     coupons["vision"] = 15;
     coupons["wolverine"] = 20;
 
+=======
+const coupons = [
+    "BATMAN" = 25,
+    "CAPTAINAMERICA" = 40,
+    "IRONMAN" = 30,
+    "VISION" = 15,
+    "WOLVRINE" = 20,
+];
+>>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
 function formulePrice (price, discount){
     const finalDiscouunt = 100 - discount;
     const priceWithDiscount = (price * finalDiscouunt) / 100;
@@ -12,8 +22,13 @@ function formulePrice (price, discount){
     return priceWithDiscount;
 }
 
+<<<<<<< HEAD
 function formuleSaveMoney (regularPrice){
     let saveMoney = regularPrice - formulePrice();
+=======
+function formuleSaveMoney (regularPrice, discountPrice){
+    const saveMoney = regularPrice - discountPrice;
+>>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
    
     return saveMoney;
 }
@@ -26,6 +41,7 @@ function finalPrice(){
     const textCouponsCustomer = boxCoupons.value;
 
     const boxText = document.getElementById("finalPrice");
+<<<<<<< HEAD
     let finalText = boxText.innerText;
 
     // const finalCoupons = coupons.push();
@@ -84,4 +100,17 @@ function finalPrice(){
            break;
   }
     
+=======
+    const finalText = boxText.innerText;
+
+    if (!coupons.includes(textCouponsCustomer)){
+        return alert("This coupons doesn't exist");
+    }
+    else if (textCouponsCustomer === coupons[0]){
+       const batmanPrice = formulePrice(textCouponsCustomer, coupons[0]);
+       const priceSaveMoney = formuleSaveMoney(textPriceCustomer, batmanPrice);
+       return finalText += "The Final price is " + batmanPrice + " USD" + "<br /> BATMAN Coupon applied " + "<br /> save " + priceSaveMoney + " USD";
+    }
+
+>>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
 }
