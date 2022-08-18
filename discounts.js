@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 const coupons = [];
     coupons["batman"] = 25;
     coupons["captainamerica"] = 40;
@@ -7,6 +8,8 @@ const coupons = [];
     coupons["wolverine"] = 20;
 
 =======
+=======
+>>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
 const coupons = [
     "BATMAN" = 25,
     "CAPTAINAMERICA" = 40,
@@ -14,6 +17,9 @@ const coupons = [
     "VISION" = 15,
     "WOLVRINE" = 20,
 ];
+<<<<<<< HEAD
+>>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
+=======
 >>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
 function formulePrice (price, discount){
     const finalDiscouunt = 100 - discount;
@@ -23,8 +29,13 @@ function formulePrice (price, discount){
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function formuleSaveMoney (regularPrice){
     let saveMoney = regularPrice - formulePrice();
+=======
+function formuleSaveMoney (regularPrice, discountPrice){
+    const saveMoney = regularPrice - discountPrice;
+>>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
 =======
 function formuleSaveMoney (regularPrice, discountPrice){
     const saveMoney = regularPrice - discountPrice;
@@ -41,6 +52,7 @@ function finalPrice(){
     const textCouponsCustomer = boxCoupons.value;
 
     const boxText = document.getElementById("finalPrice");
+<<<<<<< HEAD
 <<<<<<< HEAD
     let finalText = boxText.innerText;
 
@@ -101,6 +113,8 @@ function finalPrice(){
   }
     
 =======
+=======
+>>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
     const finalText = boxText.innerText;
 
     if (!coupons.includes(textCouponsCustomer)){
@@ -112,5 +126,8 @@ function finalPrice(){
        return finalText += "The Final price is " + batmanPrice + " USD" + "<br /> BATMAN Coupon applied " + "<br /> save " + priceSaveMoney + " USD";
     }
 
+<<<<<<< HEAD
+>>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
+=======
 >>>>>>> b6fb982441a7447be28d90ef94fa38cc0187c105
 }
