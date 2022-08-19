@@ -2,15 +2,15 @@ const coupons = [];
     coupons["BATMAN"] = 90;
     coupons["CAPTAINAMERICA"] = 40;
     coupons["IRONMAN"] = 30;
-    coupons["VISION"] = 15;
-    coupons["WOLVERINE"] = 20;
+    coupons["SPIDERMAN"] = 15;
+    coupons["DEADPOOL"] = 20;
 
 // const coupons = [
 //   "BATMAN",
 //   "CAPTAINAMERICA",
 //   "IRONMAN",
-//   "VISION",
-//   "WOLVERINE"
+//   "SPIDERMAN",
+//   "DEADPOOL"
 // ];
     function formulePrice (price, discount){
     const finalDiscouunt = 100 - discount;
@@ -67,27 +67,27 @@ const boxText = document.getElementById("finalPriceText");
     if (textCouponsCustomer === "BATMAN"){
     const finalPriceDiscount = formulePrice(textPriceCustomer, coupons["BATMAN"]);
     const finalSaveMoney = formuleSaveMoney(textPriceCustomer, finalPriceDiscount);
-      return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD" + " ,BATMAN Coupon applied " + coupons["BATMAN"] + "% discount, Save " + finalSaveMoney + " USD";
+      return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD," + " BATMAN Coupon applied " + coupons["BATMAN"] + "% discount, ¡Save " + finalSaveMoney + " USD!";
     }
     else if (textCouponsCustomer === "CAPTAINAMERICA"){
         const finalPriceDiscount = formulePrice(textPriceCustomer, coupons["CAPTAINAMERICA"]);
         const finalSaveMoney = formuleSaveMoney(textPriceCustomer, finalPriceDiscount);
-        return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD" + " ,CAPTAINAMERICA Coupon applied " + coupons["CAPTAINAMERICA"] + "% discount, Save " + finalSaveMoney + " USD";
+        return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD," + " CAPTAINAMERICA Coupon applied " + coupons["CAPTAINAMERICA"] + "% discount, ¡Save " + finalSaveMoney + " USD!";
     }
     else if (textCouponsCustomer === "IRONMAN"){
         const finalPriceDiscount = formulePrice(textPriceCustomer, coupons["IRONMAN"]);
         const finalSaveMoney = formuleSaveMoney(textPriceCustomer, finalPriceDiscount);
-        return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD" + " ,IRONMAN Coupon applied " + coupons["IRONMAN"] + "% discount, Save " + finalSaveMoney + " USD";
+        return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD," + " IRONMAN Coupon applied " + coupons["IRONMAN"] + "% discount, ¡Save " + finalSaveMoney + " USD!";
     }
-    else if (textCouponsCustomer === "VISION"){
-        const finalPriceDiscount = formulePrice(textPriceCustomer, coupons["VISION"]);
+    else if (textCouponsCustomer === "SPIDERMAN"){
+        const finalPriceDiscount = formulePrice(textPriceCustomer, coupons["SPIDERMAN"]);
         const finalSaveMoney = formuleSaveMoney(textPriceCustomer, finalPriceDiscount);
-        return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD" + " ,VISION Coupon applied " + coupons["VISION"] + "% discount, Save " + finalSaveMoney + " USD";
+        return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD," + " VISION Coupon applied " + coupons["SPIDERMAN"] + "% discount, ¡Save " + finalSaveMoney + " USD!";
     }
-    else if (textCouponsCustomer === "WOLVERINE"){
-        const finalPriceDiscount = formulePrice(textPriceCustomer, coupons["WOLVERINE"]);
+    else if (textCouponsCustomer === "DEADPOOL"){
+        const finalPriceDiscount = formulePrice(textPriceCustomer, coupons["DEADPOOL"]);
         const finalSaveMoney = formuleSaveMoney(textPriceCustomer, finalPriceDiscount);
-        return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD" + " ,WOLVERINE Coupon applied " + coupons["WOLVERINE"] + "% discount, Save " + finalSaveMoney + " USD";
+        return boxText.innerText += "The Final price is " + finalPriceDiscount + " USD," + " DEADPOOL Coupon applied " + coupons["DEADPOOL"] + "% discount, ¡Save " + finalSaveMoney + " USD!";
     }
 
      else {

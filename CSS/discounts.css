@@ -1,0 +1,102 @@
+:root{
+    --red-light: #E90C46;
+    --pink-light: #C92176;
+    --purple-light: #954090;
+    --purple-dark:#5C4E8F;
+    --blue-light: #334F79;
+    --blue-dark: #2F4858;
+    --black: #000000;
+    --white: #ffffff;
+    --sm: 15px;
+    --md: 20px;
+    --lg: 50px;
+}
+ body {
+    margin: 0;
+    font-family: 'Courier New';
+    background-color: var(--blue-dark);
+}
+.nav-container {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    background-color: var(--blue-light);
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    border-radius: 30px;
+}
+.nav-container ul{
+    font-weight: bold;
+    font-size: var(--sm);
+    color: var(--white);
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 18px;
+    margin-right: 15px;
+}
+.nav-container ul img{
+    margin-right: auto;
+    width: 20px; 
+}
+.header-container{
+    width: 100%;
+    display: grid;
+    margin-top: 0;
+    background-color: var(--purple-dark);
+    text-align: center;
+}
+.header-container h1{
+    font-size: var(--lg);
+    color: var(--white);
+    justify-self: center;
+}
+
+.coupons-container h4{
+    width: 100%;
+    margin: 0%;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    color: var(--black);
+    background-color: var(--white);
+}
+.coupons-child{
+    width: 700px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+.coupons-child ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+}
+.coupons-child li{
+    list-style: none;
+    width: 100%;
+}
+.coupons-child img{
+    width: 100%;
+}
+@keyframes slide {
+    0%{margin-left: 0%;}
+    15%{margin-left: 0%;}
+
+    20%{margin-left: -100%;}
+    35%{margin-left: -100%;}
+
+    40%{margin-left: -200%;}
+    55%{margin-left: -200%;}
+
+    60%{margin-left: -300%;}
+    75%{margin-left: -300%;}
+
+    80%{margin-left: -400%;}
+    95%{margin-left: -400%;}
+    
+}
+
+
