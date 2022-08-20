@@ -1,5 +1,5 @@
 const coupons = [];
-    coupons["BATMAN"] = 90;
+    coupons["BATMAN"] = 50;
     coupons["CAPTAINAMERICA"] = 40;
     coupons["IRONMAN"] = 30;
     coupons["SPIDERMAN"] = 15;

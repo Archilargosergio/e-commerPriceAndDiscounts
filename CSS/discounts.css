@@ -59,9 +59,19 @@
     margin: 0%;
     display: grid;
     place-content: center;
-    background-color: var(--white);
+    background-color: var(--red-light);
+    color: var(--white);
 }
-
+/* .coupons-child{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    place-content: center;
+}
+.coupons-child ul{
+    list-style: none;
+    display: flex;
+    align-content: flex-start;
+} */
 /* .coupons-child{
     width: auto;
     height: auto;
@@ -97,15 +107,97 @@
     80%{margin-left: 100%;}
     95%{margin-left: -100%;}
     
-} */ */
-
-.section-container{
+} */
+.main-container{
     display: grid;
-    grid-template-rows: repeat(auto, 200px);
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 30px;
+    place-content: center;
 }
-main section img{
-    object-fit: cover;
-    border-radius: 20px;
+.main-container section{
+    width: 200px;
+    height: 200px;
     margin: 10px;
 }
-
+.main-container section img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.product-info{
+    display: flex;
+    justify-content: space-between;
+}
+.product-info p{
+    font-weight: bold;
+    font-size: var(--sm);
+}
+.product-info p span{
+    color: var(--white);
+}
+.product-info figure{
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #E90C46;
+}
+.product-info figure img{
+    width: 23px;
+    height: 23px;
+    object-fit: cover;
+}
+.bot-container{
+    display: flex;
+    margin-top: 70px;
+    border-radius: 20px;
+    background-color: var(--blue-light);
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.bot-container img{
+    width: 30px;
+    height: 30px;
+}
+.bot-container p{
+    justify-self: start;
+    margin-right: 25px;
+    font-weight: bold;
+}
+.bot-container label{
+    color: var(--white);
+    font-weight: bold;
+}
+.bot-container input{
+    border-style: none;
+    border-radius: 20px;
+    background-color: var(--black);
+    color: var(--white);
+}
+.bot-container input::placeholder{
+    text-align: center;
+}
+.bot-container button{
+    border-style: none;
+    border-radius: 20px;
+    background-color: var(--white);
+    color: var(--black);
+    margin-left: 15px;
+}
+.text-box{
+    display: flex;
+    place-content: center;
+    color: var(--red-light);
+    font-size: var(--lg);
+    font-weight: bold;
+    background-color: var(--blue-light);
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+}
+footer{
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    font-size: var(--sm);
+}
