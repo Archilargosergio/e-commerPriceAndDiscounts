@@ -149,6 +149,7 @@
 .bot-container button{
     border-style: none;
     border-radius: 20px;
+    font-weight: bold;
     background-color: var(--white);
     color: var(--black);
     margin-left: 15px;
