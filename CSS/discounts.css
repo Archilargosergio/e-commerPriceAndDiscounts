@@ -36,15 +36,22 @@
     gap: 18px;
     margin-right: 15px;
 }
+.nav-container ul li{
+    cursor: pointer;
+}
+.nav-container ul li:nth-child(7){
+    cursor: help;
+}
 .nav-container ul img{
     margin-right: auto;
     width: 20px; 
+    cursor: pointer;
 }
 .header-container{
     width: 100%;
     display: grid;
     margin-top: 0;
-    background-color: var(--purple-dark);
+    background-color: var(--black);
     text-align: center;
 }
 .header-container h1{
@@ -62,68 +69,27 @@
     background-color: var(--red-light);
     color: var(--white);
 }
-/* .coupons-child{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    place-content: center;
-}
-.coupons-child ul{
-    list-style: none;
-    display: flex;
-    align-content: flex-start;
-} */
-/* .coupons-child{
-    width: auto;
-    height: auto;
-    margin: 20px auto 0;
-    overflow: hidden;
-    animation: slide 10s infinite alternate ease-in-out;
-}
-.coupons-child ul{
-    display: flex;
-    padding: 0;
-    width: 300%;
-}
-.coupons-child li{
-    list-style: none;
-    width: 100%;
-}
-.coupons-child img{
-    width: 100%;
-}
-@keyframes slide {
-    0%{margin-left: 0%;}
-    15%{margin-left: 0%;}
-
-    20%{margin-left: -25%;}
-    35%{margin-left: -25%;}
-
-    40%{margin-left: -50%;}
-    55%{margin-left: -50%;}
-
-    60%{margin-left: -75%;}
-    75%{margin-left: -75%;}
-
-    80%{margin-left: 100%;}
-    95%{margin-left: -100%;}
-    
-} */
 .main-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
-    gap: 30px;
+    gap: 25px;
     place-content: center;
 }
 .main-container section{
     width: 200px;
     height: 200px;
     margin: 10px;
+    cursor: pointer;
 }
 .main-container section img{
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
+}
+.main-container section img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
 }
 .product-info{
     display: flex;
@@ -161,21 +127,24 @@
 }
 .bot-container p{
     justify-self: start;
-    margin-right: 25px;
+    margin-right: 50px;
     font-weight: bold;
 }
 .bot-container label{
     color: var(--white);
     font-weight: bold;
+    cursor: pointer;
 }
 .bot-container input{
     border-style: none;
     border-radius: 20px;
     background-color: var(--black);
     color: var(--white);
+    cursor: pointer;
 }
 .bot-container input::placeholder{
     text-align: center;
+    font-family: 'Courier New';
 }
 .bot-container button{
     border-style: none;
@@ -183,6 +152,14 @@
     background-color: var(--white);
     color: var(--black);
     margin-left: 15px;
+    cursor: pointer;
+}
+.bot-container button:hover{
+    background-color: forestgreen;
+    color: var(--white);
+    font-weight: bold;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
 }
 .text-box{
     display: flex;
@@ -195,9 +172,56 @@
     text-align: center;
     margin: 20px;
 }
+.text-box:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
 footer{
     display: flex;
     align-items: flex-end;
     text-align: center;
     font-size: var(--sm);
+}
+@media (max-width: 640px){
+    .coupons-container h4{
+        height: 50px;
+        font-size: var(--sm);
+        text-align: center;
+    }
+    .main-container{
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .main-container section{
+        width: 140px;
+        height: 140px;
+    }
+    .main-container section img{
+        width: 140px;
+        height: 140px;
+    }
+    .product-info figure img{
+        width: 15px;
+        height: 15px;
+    }
+    .product-info figure{
+        width: 15px;
+        height: 15px;
+    }
+    .bot-container{
+        font-size: var(--sm);
+    }
+    .bot-container p{
+        margin-right: 5px;
+    }
+    .bot-container input{
+       width: 90px;
+       height: 20px;
+    }
+    .bot-container button{
+        margin-right: 5px;
+        margin-left: 0%;
+    }
+    .text-box{
+        font-size: var(--md);
+    }
 }
