@@ -69,6 +69,10 @@
     background-color: var(--red-light);
     color: var(--white);
 }
+.coupons-container h4:hover{
+   transform: scale(1.02);
+   transition-duration: 0.5s;
+}
 .main-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
@@ -124,6 +128,11 @@
 .bot-container img{
     width: 30px;
     height: 30px;
+    cursor: pointer;
+}
+.bot-container img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
 }
 .bot-container p{
     justify-self: start;
@@ -172,6 +181,7 @@
     border-radius: 20px;
     text-align: center;
     margin: 20px;
+    cursor: pointer;
 }
 .text-box:hover{
     transform: scale(1.05);
