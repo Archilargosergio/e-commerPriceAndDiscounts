@@ -143,6 +143,7 @@ nav{
     justify-content: center;
     gap: 10px;
     align-items: center;
+    font-size: var(--sm);
 }
 .bot-container img{
     width: 30px;
@@ -155,7 +156,7 @@ nav{
 }
 .bot-container p{
     justify-self: start;
-    margin-right: 50px;
+    margin-right: 40px;
     font-weight: bold;
 }
 .bot-container label{
@@ -178,9 +179,9 @@ nav{
     border-style: none;
     border-radius: 20px;
     font-weight: bold;
+    font-size: var(--md);
     background-color: var(--white);
     color: var(--black);
-    margin-left: 15px;
     cursor: pointer;
 }
 .bot-container button:hover{
@@ -190,6 +191,7 @@ nav{
     transform: scale(1.2);
     transition-duration: 0.5s;
 }
+
 .text-box{
     display: flex;
     place-content: center;
@@ -247,18 +249,19 @@ footer{
         height: 15px;
     }
     .bot-container{
-        font-size: var(--sm);
+        font-size: 8px;
+        margin-top: 70px;
+        gap: 0px;
     }
     .bot-container p{
-        margin-right: 5px;
+        margin-right: 0px;
     }
     .bot-container input{
        width: 90px;
        height: 20px;
     }
-    .bot-container button{
-        margin-right: 5px;
-        margin-left: 0%;
+    .bot-container .button{
+        font-size: var(--sm);
     }
     .text-box{
         font-size: var(--md);
