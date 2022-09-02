@@ -292,16 +292,16 @@
                 </div>
             </section>
         </main>
-    <div class="bot-container">
+    <form class="bot-container">
         <img src="./Icons/smart_toy_FILL0_wght400_GRAD0_opsz48.png" alt="">
         <p>Calculate the final price</p>
         <label for="priceText">Product price</label>
-        <input type="number" id="priceText" placeholder="$$$$$$$$$$$$$$">
+        <input class="input-container" type="number" id="priceText" placeholder="$$$$$$$$$$$$$$">
         <label for="couponsText">Bonus coupons</label>
-        <input type="text" id="couponsText" placeholder="WRITE BONUS NAME">
+        <input class="input-container" type="text" id="couponsText" placeholder="WRITE BONUS NAME">
         <button type="button" onclick="finalDiscountPrice()">GO AHEAD</button>
-        <button type="reset">Reset</button>
-    </div>
+        <input class="button-reset" type="reset" value="Reset">
+    </form>
     <p class="text-box" id="finalPriceText"></p>
     <footer>
         <p>

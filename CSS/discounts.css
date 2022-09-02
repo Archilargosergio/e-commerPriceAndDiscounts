@@ -159,19 +159,19 @@ nav{
     margin-right: 40px;
     font-weight: bold;
 }
-.bot-container label{
+.bot-container label {
     color: var(--white);
     font-weight: bold;
     cursor: pointer;
 }
-.bot-container input{
+.input-container{
     border-style: none;
     border-radius: 20px;
     background-color: var(--black);
     color: var(--white);
     cursor: pointer;
 }
-.bot-container input::placeholder{
+.input-container::placeholder{
     text-align: center;
     font-family: 'Courier New';
 }
@@ -184,7 +184,23 @@ nav{
     color: var(--black);
     cursor: pointer;
 }
+.button-reset{
+    border-style: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: var(--md);
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
 .bot-container button:hover{
+    background-color: forestgreen;
+    color: var(--white);
+    font-weight: bold;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+.button-reset:hover{
     background-color: forestgreen;
     color: var(--white);
     font-weight: bold;
