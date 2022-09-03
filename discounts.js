@@ -58,7 +58,9 @@ function formuleSaveMoney (price, discountPrice){
 
 const boxText = document.getElementById("finalPriceText"); 
 
-
+     while(boxText.firstChild){
+      boxText.removeChild(boxText.firstChild);
+     }
 // return boxText.innerText += "The final price is " + discountPrice + " USD" + " , Coupon applied is " + textCouponsCustomer + " , You save " + saveMoney + " USD";
 
     // if (!coupons.includes[textCouponsCustomer]){
